@@ -2,7 +2,6 @@
 // Make me compile! Execute the command `rustlings hint variables2` if you want a hint :)
 
 fn main() {
-    // because it can't infer type
     let x = 0;
     if x == 10 {
         println!("Ten!");
