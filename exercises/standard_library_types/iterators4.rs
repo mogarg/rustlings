@@ -9,9 +9,15 @@ pub fn factorial(num: u64) -> u64 {
     // Try not to use:
     // - imperative style loops (for, while)
     // - additional variables
+    // if num == 1 {
+    //     1
+    // } else {
+    //     num * factorial(num - 1)
+    // }
     // For an extra challenge, don't use:
     // - recursion
     // Execute `rustlings hint iterators4` for hints.
+    (1..=num).fold(1, |acc, v| acc * v)
 }
 
 #[cfg(test)]
